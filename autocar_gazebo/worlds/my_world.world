@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <!-- Inclure le sol -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Inclure le soleil -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Inclure votre modèle de voiture -->
+    <include>
+      <uri>model://your_car_model</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Ajouter des obstacles -->
+    <include>
+      <uri>model://obstacle_block</uri>
+      <pose>5 5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://obstacle_block</uri>
+      <pose>10 10 0 0 0 0</pose>
+    </include>
+  </world>
+</sdf>
+
